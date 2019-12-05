@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+//Declaring an array 
+var fruits =["apple","banana","peach","oranges","strawberry"];
+//iterates over array element
+//for(var i=0;i<=fruits.length;i++){
+	//document.write(fruits[i]+"<br>");//printts array elemnt 
+//}
+
+////iterates over array element-ES6
+for (var fruit of fruits){
+	document.write(fruit+"<br>");
+}
+//Adding new elements to an array 
+
+var colors=["black","blue","baby pink"];
+colors.push("yellow");//adds at end  prints:black,blue,baby pink,yellow 
+colors.unshift("white");//adds at the end  prints:white,black,blue,baby pink,yellow 
+
+
+document.write(colors);//Prints white, black,blue,baby pink,yellow 
+document.write(colors.length);//prints :5 */
+//Removing elements of an aray 
+var last =colors.pop();
+document.write(last + "<br>") //prints yellow
+//Adding or removing elememts at any position 
+var removed =colors.splice(0,1);
+removed = colors.splice(1,0,"pink","yellow");
+document.write(removed)
+
+//creating a string from an array
+document.write(colors.join(","));//
+//Extracting a portion of array
+var fruits=["apple","banana","peach","oranges","strawberry"]
+var subarr=fruits.slice(1,3);
+document.write(subarr    + "<br>");//prints bananana ,peach
+
+//merging Two or More arrays 
+var pets =["rabbit","dog","cat"];
+var wilds=["tiger","lion","panda"];
+//creating new array by combining pets and wild arrays
+var animals =pets.concat(wilds);
+document.write(animals   + "<br>");
+
+
+//searching Through array 
+var fruits = ["apple","banana","peach","oranges","strawberry"];
+document.write(fruits.indexOf("apple")+ "<br>");//prints 0
+document.write(fruits.indexOf("banana")+ "<br>");
+document.write(fruits.indexOf("peach")+ "<br>");
+document.write(fruits.indexOf("oranges")+ "<br>");
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

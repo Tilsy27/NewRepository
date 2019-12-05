@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>including external javascript file </title>
+</head>
+
+<script>
+//Understanding the Variable Scope
+//Defining function - local scope
+function greetWorld() {
+var greet = "Hello World!";
+alert(greet);
+}
+
+greetWorld(); // Outputs: Hello World!
+
+alert(greet);
+</script>
+<script type="hello.js"></script>
+<body>
+<button type=" button" id="myBtn">Click me </button>
+
+<button onclick="alert('Hello World')">Click me </button>
+<button onclick="document.write('Hello World')">Click me </button>
+</body>
+</html>

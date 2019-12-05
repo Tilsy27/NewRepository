@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>jquery load() demo</title>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script>
+$(document).ready(function(){
+	$("button").click(function(){
+		$("#box").load("jquery_html_load.html #hint");
+	});
+	});
+</script>
+
+</head>
+
+
+<body>
+<div id="box">
+<h2>Click button to load new content inside div box</h2>
+</div>
+<button type="button">Load Content </button>
+</body>
+</html>

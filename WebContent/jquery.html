@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>JQuery Children() Demo</title>
+<style>
+.highlight{
+background: yellow;
+}
+</style>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+$("ul").children().addClass("highlight");
+});
+</script>
+</head>
+<body>
+<div class="container">
+<h1>Hello World</h1>
+<p>This is a <em>simple paragraph</em>.</p>
+<ul>
+<li>Item One</li>
+<li>Item two</li>
+</ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Function </title>
+</head>
+<body>
+
+<script>
+
+// *** using function delcaration.... ***
+
+// Defining and Calling a Function
+// Defining function
+function sayHello() {
+alert("Hello, welcome to this website!");
+}
+
+// Calling function
+sayHello(); // 0utputs: Hello, welcome to this website!
+
+// Adding Parameters to Functions
+// Defining function
+function displaySum(num1, num2) {
+var total = num1 + num2;
+alert(total);
+}
+
+// Calling function
+displaySum(6, 20); // 0utputs: 26
+displaySum(-5, 17); // 0utputs: 12
+
+
+// Default Values for Function Parameters - ES6
+function sayHello(name = 'Guest') {
+alert('Hello, ' + name);
+}
+
+sayHello(); // 0utputs: Hello, Guest
+sayHello('John'); // 0utputs: Hello, John
+
+// Returning Values from a Function
+// Defining function
+function getSum(num1, num2) {
+var total = num1 + num2;
+return total;
+}
+
+// Displaying returned value
+alert(getSum(6, 20)); // 0utputs: 26
+alert(getSum(-5, 17)); // 0utputs: 12
+
+
+//*** using function expression.... ***
+// Function Declaration
+function getSum(num1, num2) {
+var total = num1 + num2;
+return total;
+}
+alert(getSum(5, 10))
+// Function Expression
+
+var getSum = function(num1, num2) {
+var total = num1 + num2;
+return total;
+};
+
+var sum = getSum(7, 25);
+alert(sum); // 0utputs: 32
+
+// Understanding the Variable Scope
+// Defining function - local scope
+function greetWorld() {
+var greet = "Hello World!";
+alert(greet);
+}
+
+greetWorld(); // Outputs: Hello World!
+
+alert(greet); // Uncaught ReferenceError: greet is not defined
+
+
+//Defining function - global scope
+var greet = "Hello World!";
+
+//Defining function
+function greetWorld() {
+alert(greet);
+}
+
+greetWorld(); // Outputs: Hello World!
+
+alert(greet); // Outputs: Hello World!
+
+</script>
+</body>
+</html>
